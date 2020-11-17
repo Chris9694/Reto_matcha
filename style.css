@@ -1,0 +1,401 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3.8fr 3fr 3.5fr;
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+        "nav"
+        "main"
+        "top-features"
+        "tools"
+        "growing-ecomerce"
+        "compare"
+        "matcha-powers"
+        "cards"
+        "footer"
+    ;
+
+    column-gap: 0.2rem;
+    row-gap: 0.2rem;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav{
+    background-color:white;
+    grid-area: nav;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    margin: 20px;
+}
+
+.container > header > nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:  0px 50px 0px 50px;
+    padding: 0px 40px 0px 40px;
+    
+}
+
+.container > header > nav > ul >li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: rgb(25, 49, 37);
+}
+
+.container > header > nav > ul >li >a{
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(31, 72, 73);
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 60px 0px 60px;
+}
+
+.sign{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgb(31, 72, 73);
+    list-style-type: none;
+}
+
+.actions > button{
+    color:  white;
+    background-color:  rgb(31, 72, 73);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+main{
+    background-color: rgb(177, 253, 153);
+    grid-area: main;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: space-between;
+    padding: 10px 80px 10px 80px;
+}
+
+.button-main{
+    background-color: rgb(79, 192, 64);
+    border: none;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+    padding: 15px 25px 15px 25px;
+}
+
+.text-main{
+    flex:1;
+    align-content: space-between;
+    color: rgb(31, 72, 73);
+}
+
+.text-main > h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+}
+
+.text-main > p{
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.text-main > h4{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(107, 106, 106);
+}
+
+.video-main{
+    flex: 1;
+    margin: auto;
+}
+
+.press-play{
+    background-color: rgb(31, 72, 73);
+    border: none;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+    padding: 45px 25px 45px 25px;
+}
+
+.center{
+    margin: auto;
+}
+
+
+#top-features{
+    text-align: center;
+    background-color: white;
+    grid-area: top-features;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    margin: 60px;
+}
+
+.features > .feature1 > p{
+    margin: 16px 20px 16px 20px;
+}
+
+.features > .feature2 > p{
+    margin: 16px 20px 16px 20px;
+}
+
+.features > .feature3 > p{
+    margin: 16px 20px 16px 20px;
+}
+
+
+
+#tools{
+    background-color: rgb(215, 242, 250);
+    grid-area: tools;
+    text-align: center;
+}
+
+.tools-container{
+    margin: 80px;
+}
+
+.tools_{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.tool1{
+    flex:1;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tool2{
+    flex:1;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tool3{
+    flex:1;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tool4{
+    flex:1;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#growing-ecomerce{
+    background-color: green;
+    grid-area: growing-ecomerce;
+}
+
+.ecomerce-container{
+    display: flex;
+    flex-direction: row;
+    margin: 80px;
+}
+
+.ecomerce-slider{
+    margin: 20px 50px 20px 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+
+#compare{
+    background-color: grey;
+    grid-area: compare;
+    text-align: center;
+}
+
+#compare > img{
+    width: 70vw;
+    height: auto;
+}
+
+#matcha-powers{
+    background-color: khaki;
+    grid-area: matcha-powers;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.powers-button{
+    margin: 5vh auto;
+}
+
+#matcha-powers > img{
+
+    width: 70vw;
+    height: auto;
+    margin: auto;
+}
+
+#cards{
+    background-color: lavender;
+    grid-area: cards;
+    display: flex;
+    justify-content: center; 
+}
+
+.cards-container{
+    
+    margin:   80px ;
+}
+
+.cards-container > img{
+    
+    width: 40vw;
+    height: auto;
+    margin: auto;
+}
+
+footer{
+    background-color: lightgray;
+    grid-area: footer;
+}
+
+.footer-fee{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(20, 56, 47);
+    margin: 20px 80px;
+    padding:  30px;
+    border-radius: 10px;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px 80px;
+    padding:  30px;
+
+}
+
+.footer-actions{
+    flex-direction: row;
+}
+
+@media (max-width: 575px){
+    .navbar,
+    .actions{
+        display: none;
+    }
+
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3.8fr 3fr 3.5fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "top-features"
+        "tools"
+        "growing-ecomerce"
+        "compare"
+        "matcha-powers"
+        "cards"
+        "footer"
+        ;
+    }
+    
+    main{
+        background-color: rgb(177, 253, 153);
+        grid-area: main;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-between;
+        padding: 10px 80px 10px 80px;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+        margin: 60px;
+    }
+
+    .tools_{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .ecomerce-container{
+        display: flex;
+        flex-direction: column;
+        margin: 80px;
+    }
+
+    .footer-fee{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(20, 56, 47);
+        margin: 20px 80px;
+        padding:  30px;
+        border-radius: 10px;
+    }
+    
+    .footer-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        margin: 20px 80px;
+        padding:  30px;
+    
+    }
+    
+    .footer-actions{
+        flex-direction: column;
+    }
+}
